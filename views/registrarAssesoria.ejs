@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Asesoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-center">Registrar Asesoria</h1> <br><br>
+    <div class="container">
+    <form class="row g-3" action="/registrarAssesorias" method="post">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Fecha Asesoria</label>
+        <input type="date" class="form-control" name="fecha" placeholder="Año-Mes-Día">
+      </div>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Tema Abordado</label>
+            <input type="text" class="form-control" name="tema">
+          </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Duración</label>
+          <input type="datetime" class="form-control" name="duracion" placeholder="Hora-Minuto-Segundo">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Calificación</label>
+          <input type="text" class="form-control" name="calificacion">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Id Asesor</label>
+          <input type="text" class="form-control" name="idAss">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Id Cliente</label>
+          <input type="text" class="form-control" name="idcliente">
+        </div>
+        
+        <div class="col-12">
+            <input type="submit" class="btn btn-outline-dark" value="Registrar">
+        </div>
+      </form>
+    </div>
+</body>
+</html>
