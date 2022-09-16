@@ -197,7 +197,7 @@ body .content-all .main-left {
 }
 
 .content-all .container .container-table {
-    overflow-x:scroll;
+    overflow-x:auto;
 }
 
 @media screen and (max-width: 1400px) {

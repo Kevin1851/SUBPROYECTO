@@ -25,40 +25,35 @@ function Limpiar_Formulario() {
 
 function Validar_Formulario(){
 
-    let inputIdentificacion = document.getElementById("identificacion").value.trim();
-    if(inputIdentificacion == ""){
-        alert("Porfavor, ingrese su identificación");
-        document.getElementById("identificacion").focus();
+    let inputIdentificacion = document.getElementById("identificacion").value
+    let inputNombre = document.getElementById("nombre").value
+    let inputFechaNacimiento = document.getElementById("fechaNacimiento").value
+    let selectEstado = document.getElementById("estado").value
+
+    if(inputIdentificacion.trim() == ""){
+        
+        document.getElementById("identificacion").value.classList.add("has-error")
         return false;
     }
-    let inputNombre = document.getElementById("nombre").value.trim();
-    if(inputNombre == ""){
+    
+    if(inputNombre.trim() == ""){
         alert("Porfavor, ingrese su nombre");
-        document.getElementById("nombre").focus();
+        inputNombre.focus();
         return false;
     }
-    let inputFechaNacimiento = document.getElementById("fechaNacimiento").value.trim();
-    if(inputFechaNacimiento == ""){
+    
+    if(inputFechaNacimiento.trim() == ""){
         alert("Porfavor, ingrese su fecha de nacimiento");
-        document.getElementById("fechaNacimiento").focus();
+        inputFechaNacimiento.focus();
         return false;
     }
-    let selectEstado = document.getElementById("estado").value.trim();
-    if(selectEstado == false){
+    
+    if(selectEstado.trim() == false){
         alert("Porfavor, ingrese el estado del usuario");
-        document.getElementById("estado").focus();
+        selectEstado.focus();
         return false;
     }
 
     return Registrar_Usuario();
 
-}
-
-function Enviar_Formulario(){
-    if(Validar_Formulario() == true){
-        Limpiar_Formulario()
-    }else{
-        return false;
-    }
-    
 }
