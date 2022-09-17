@@ -194,6 +194,12 @@ body .content-all .module-content .content-grid {
     color: rgb(58, 58, 58);
 }
 
+@media screen and (max-width: 1400px) {
+    body nav div {
+        margin: auto 25px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     body nav div {
         margin: auto 25px;
